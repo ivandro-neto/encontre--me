@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: var(--gray-800);
+    border: 10px solid var(--gray-800);
+}
+
+.logoContainer img {
+    width: 15rem;
+    height: auto;
+}
+
+.links {
+    color: var(--gray-950);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.links a {
+    color: var(--gray-950);
+    font-weight: 600;
+    font-size: var(--base)
+}
+
+.links a:hover {
+    color: var(--gray-800);
+}
+
+.accountContainer {
+    display: flex;
+    align-items: center;
+}

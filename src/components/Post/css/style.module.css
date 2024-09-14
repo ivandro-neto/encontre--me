@@ -1,0 +1,144 @@
+.postContainer {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  background-color: var(--gray-200);
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.imageContainer{
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.userInfoContainer{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileName {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.location {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+
+.postDescription {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  text-wrap: wrap;
+  max-width: 80%;
+  overflow-wrap: anywhere;
+}
+
+.postImage {
+  width: 100%;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.postActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.x {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 500ms;
+  border-radius: 20px;
+  overflow: hidden;
+  width: auto;
+  max-width: 12rem;
+  width: 3.5rem;
+  background-color: var(--gray-300);
+}
+
+.x svg{
+  fill: var(--gray-600);
+  transition: 300ms;
+}
+
+.x:hover{
+  background-color: var(--primary-color);
+  width: 12rem;
+}
+
+.x:hover svg{
+  fill: var(--gray-50);
+}
+.x::after{
+  position: absolute;
+  content: 'Buscar';
+  transform: translate(10vw);
+  transition: all 500ms;
+  right: 2rem;
+}
+
+.x:hover::after{
+  transform: translate(0);
+  color: var(--gray-50);
+}
+.alert{
+  background-color: var(--error);
+}
+.alert:hover{
+  background-color: var(--error-light);
+}
+.acheiButton::after{
+  content: 'Achei';
+}
+
+.acheiButton:hover {
+  background-color: var(--primary-color);
+  width: 10rem;
+}
+.shareButton::after{
+  content: 'Partilhar';
+}
+.shareButton:hover {
+  background-color: #09dd37;
+}
+
+.desactived{
+  display: none;
+}
